@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Price Comparison Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Price Comparison Website</h1>
+  </header>
+  <main>
+    <section id="categories">
+      <h2>Select a Category</h2>
+      <ul>
+        <li><button class="phones-btn" onclick="loadProducts('phones')">Phones</button></li>
+        <li><button class="laptops-btn" onclick="loadProducts('laptops')">Laptops</button></li>
+        <li><button class="speakers-btn" onclick="loadProducts('speakers')">Speakers</button></li>
+        <li><button class="smartwatches-btn" onclick="loadProducts('smartwatches')">Smart Watches</button></li>
+      </ul>
+    </section>
+    <section id="product-comparison">
+      <h2>Compare Products</h2>
+      <div class="comparison-container">
+        <select id="product1" class="dropdown"></select>
+        <select id="product2" class="dropdown"></select>
+        <button class="compare-btn" onclick="compareProducts()">Compare</button>
+      </div>
+    </section>
+    <section id="comparison-results">
+      <h2>Comparison Results</h2>
+      <div id="results"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Price Comparison Website</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
